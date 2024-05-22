@@ -45,5 +45,10 @@
   "lint-staged": {
     "src/**/*.js": "eslint --cache --fix",
     "src/**/*.{js,css,md,astro}": "prettier --write"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.3.4",
+    "dotenv": "^16.4.5",
+    "keycloak-js": "^24.0.4"
   }
 }
