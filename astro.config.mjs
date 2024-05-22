@@ -12,7 +12,6 @@ export default defineConfig({
     service: passthroughImageService()
   },
   site: 'https://obj1-unahur.github.io',
-  base: '/objetos-web',
   server: {
     port: parseInt(process.env.PORT, 10) || 10000,
   },
