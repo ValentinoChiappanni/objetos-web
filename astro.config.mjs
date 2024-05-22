@@ -11,6 +11,9 @@ export default defineConfig({
   },
   site: 'https://obj1-unahur.github.io',
   base: '/objetos-web',
+  server: {
+    port: 10000, 
+  },
   compressHTML: false,
   integrations: [mdx(), icon(), tailwind({
     applyBaseStyles: false
