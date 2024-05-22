@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
 import icon from 'astro-icon';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +14,7 @@ export default defineConfig({
   site: 'https://obj1-unahur.github.io',
   base: '/objetos-web',
   server: {
-    port: process.env.PORT || 10000, 
+    port: parseInt(process.env.PORT, 10) || 10000,
   },
   compressHTML: false,
   integrations: [mdx(), icon(), tailwind({
